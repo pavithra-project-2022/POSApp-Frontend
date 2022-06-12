@@ -96,7 +96,7 @@ const CartPage = () => {
         userId: JSON.parse(localStorage.getItem("auth"))._id,
       };
       // console.log(newObject);
-      await axios.post("/api/bills/add-bills", newObject);
+      await axios.post("https://pos-application-backend.herokuapp.com/api/bills/add-bills", newObject);
       message.success("Bill Generated");
       navigate("/bills");
     } catch (error) {
