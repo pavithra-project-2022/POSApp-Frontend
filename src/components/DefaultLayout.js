@@ -30,11 +30,11 @@ const DefaultLayout = ({ children }) => {
   }, [cartItems]);
 
   return (
-    <Layout>
+    <Layout className="layoutfull">
       {loading && <Spinner />}
-      <Sider trigger={null} collapsible collapsed={collapsed}>
+      <Sider className="sidefull"  trigger={null} collapsible collapsed={collapsed}>
         <div className="logo">
-          <h1 className="text-center text-light font-wight-bold mt-4">POS</h1>
+          <h1 className="text-center text-light font-wight-bold mt-4">POS APPLICATION</h1>
         </div>
         <Menu
           theme="dark"

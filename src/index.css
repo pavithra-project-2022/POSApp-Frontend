@@ -54,6 +54,11 @@ body {
 .register input {
   width: 400px !important;
 }
+@media (min-width:0px) and (max-width:700px){
+  .register input {
+    width: 280px !important;
+  }
+}
 
 .regsiter-form {
   background-color: rgba(98, 197, 251, 0.463);
